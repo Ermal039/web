@@ -4,20 +4,15 @@
 #BFEAF5
 #EAFDFC */
 
-
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif; */
-  /* width:100% ; */
   font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
   min-height: 100vh;
   width: 100%;
@@ -30,8 +25,6 @@ header {
   background-size: cover;
   position: relative;
 }
-
-
 .navbar {
   z-index: 1;
   height: 80px;
@@ -43,10 +36,10 @@ header {
   padding-bottom: 5px;
   background-color: white;
 }
-.navbar h1{
-  color: #82AAE3;
+.navbar h1 {
+  color: #82aae3;
   margin-right: 400px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
@@ -63,15 +56,14 @@ header {
   font-weight: bold;
 }
 .navbar li a:hover {
-  color: #82AAE3;
+  color: #82aae3;
   transition: 0.8s;
 }
-
 .navbar li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: #82AAE3;
+  background: #82aae3;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -84,19 +76,17 @@ header {
   width: 70px;
 }
 #kyqu {
-  background-color: #82AAE3;
-  
+  background-color: #82aae3;
   border-radius: 20px;
   padding-left: 17px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 #kyqu:hover {
   color: #023e73;
   background-color: #023e73;
   transition: 0.8s;
 }
-
 section {
   width: 550px;
   height: 300px;
@@ -111,142 +101,118 @@ section p {
 #butoni {
   text-decoration: none;
   padding: 15px 20px;
-  background-color: #82AAE3;
+  background-color: #82aae3;
   color: white;
   font-weight: bold;
   border-radius: 5px;
   margin-left: 85%;
   margin-bottom: 10%;
 }
-/* qetu perfundon faqja e pare*/
-/* ////////////////////////// */
-
-main{
-  /* background-color: grey; */
+main {
   height: 100vh;
   padding-top: 20px;
 }
-main .fullpage{
-  /* background-color: aqua; */
+main .fullpage {
   width: 750px;
   padding-left: 15px;
 }
-.text-area{
+.text-area {
   padding-left: 10px;
-  /* background-color: darkgoldenrod; */
   width: 240px;
 }
-.text-area p{
+.text-area p {
   color: grey;
 }
-.text-area h3{
+.text-area h3 {
   font-weight: 500;
 }
-main .upper{
+main .upper {
   display: flex;
   justify-content: center;
-  /* background-color: red; */
   width: 730px;
   height: 300px;
 }
-main .upper .upper-left{
-  /* background-color: blue; */
-  width: 365px; 
-  /* margin-right: 10px; */
+main .upper .upper-left {
+  width: 365px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .upper .upper-left img{
+main .upper .upper-left img {
   width: 70px;
   margin-right: 15px;
 }
-main .upper .upper-right{
-  /* background-color: orange;  */
-  width: 365px; 
+main .upper .upper-right {
+  width: 365px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .upper .upper-right img{
+main .upper .upper-right img {
   width: 70px;
   margin-right: 15px;
 }
-
-
-main .lower{
+main .lower {
   display: flex;
-  /* background-color: yellow; */
-  
   width: 700px;
   height: 300px;
-  
 }
-main .lower .lower-left{
-  /* background-color: green; */
-  width: 365px; 
-
+main .lower .lower-left {
+  width: 365px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .lower .lower-left img{
-  width: 70px;  
+main .lower .lower-left img {
+  width: 70px;
   margin-right: 15px;
-
 }
-main .lower .lower-right{
-  width: 365px; 
-
+main .lower .lower-right {
+  width: 365px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .lower .lower-right img{
+main .lower .lower-right img {
   width: 70px;
   margin-right: 15px;
 }
-
-.main-img img{
+.main-img img {
   width: 550px;
   height: 600px;
-  margin-left:750px;
+  margin-left: 750px;
   margin-top: -600px;
 }
-
-/* KETU PERFUNDON FAQJA E DYTE */
-/* ////////////////////////// */
-
-.container{
-  background-color: #82AAE3;
+.container {
+  background-color: #82aae3;
   height: 100vh;
 }
-.container h1{
+.container h1 {
   font-weight: 500;
   color: white;
   text-align: center;
   padding-top: 80px;
 }
-.container .row{
+.container .row {
   margin-top: 8%;
   display: flex;
   justify-content: space-around;
 }
-.Spitali{
+.Spitali {
   width: 80%;
   margin: auto;
-  text-align:center;
+  text-align: center;
   padding-top: 25px;
 }
-.Spitali-col{
+.Spitali-col {
   flex-basis: 25%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
- .Spitali-col img {
+.Spitali-col img {
   width: 100%;
   display: block;
 }
@@ -278,31 +244,28 @@ main .lower .lower-right img{
   bottom: 49%;
   opacity: 1;
 }
-/* Ketu perfundon css i faqese se trete  */
-.contain{
-
+.contain {
   max-width: 1170px;
-  margin:auto;
+  margin: auto;
   margin-left: 400px;
 }
-.row{
-
+.row {
   display: flex;
   flex-wrap: wrap;
 }
-ul{
+ul {
   list-style: none;
 }
-.footer{
+.footer {
   border-top: 1px solid lightslategray;
   background-color: white;
-    padding: 70px 0;
+  padding: 70px 0;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 10px;
+.footer-col {
+  width: 25%;
+  padding: 0 10px;
 }
-.footer-col h4{
+.footer-col h4 {
   font-size: 18px;
   color: black;
   text-transform: capitalize;
@@ -310,20 +273,20 @@ ul{
   font-weight: 500;
   position: relative;
 }
-.footer-col h4::before{
-  content: '';
+.footer-col h4::before {
+  content: "";
   position: absolute;
-  left:0;
+  left: 0;
   bottom: -10px;
-  background-color: #82AAE3;
+  background-color: #82aae3;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
 }
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
-.footer-col ul li a{
+.footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
@@ -332,20 +295,17 @@ ul{
   color: black;
   display: block;
   transition: all 0.3s ease;
-} 
-.footer-col ul li a:hover{
-  color: #82AAE3;
+}
+.footer-col ul li a:hover {
+  color: #82aae3;
   padding-left: 8px;
 }
-.footer-col .social-links a{
+.footer-col .social-links a {
   padding-left: 5px;
 }
-#socials{
+#socials {
   padding-left: 30px;
 }
-.cnt{
-    color: black;
-    
+.cnt {
+  color: black;
 }
-
-
