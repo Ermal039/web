@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center; */
     height: 100vh;
-    background-color: lightblue;
+    background-color: #BFEAF5;
 }
 
 .navbar{
@@ -159,9 +159,9 @@ body{
     outline: none;
     cursor: pointer;
     font-weight: bold;
-    background: #1A237E;
+    background: #82AAE3;
     border-radius: 10px;
-    border: 1px solid #3949AB;
+    border: none;
     transition: 0.5s;
 }
 .login_form button:hover{
