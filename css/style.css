@@ -20,7 +20,7 @@ header {
       rgba(26, 10, 10, 0.007),
       rgba(19, 11, 11, 0.7)
     ),
-    url(../img/bg.jpg);
+    url(../img/ss.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -184,70 +184,24 @@ main .lower .lower-right img {
   margin-left: 750px;
   margin-top: -600px;
 }
-.container {
-  background-color: #82aae3;
-  height: 100vh;
-}
+
 .container h1 {
   font-weight: 500;
-  color: white;
   text-align: center;
   padding-top: 80px;
 }
-.container .row {
-  margin-top: 8%;
-  display: flex;
-  justify-content: space-around;
-}
-.Spitali {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 25px;
-}
-.Spitali-col {
-  flex-basis: 25%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-.Spitali-col img {
-  width: 100%;
-  display: block;
-}
-.layer {
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-.layer:hover {
-  background: rgba(4, 9, 30, 0.7);
-}
-.layer h3 {
-  width: 100%;
-  font-weight: 500%;
-  color: white;
-  font-size: 26px;
-  bottom: 0;
-  left: 85%;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 2s;
-}
-.layer:hover h3 {
-  bottom: 49%;
-  opacity: 1;
-}
+
 .contain {
   max-width: 1170px;
   margin: auto;
   margin-left: 400px;
+}
+#image{
+  border : 5px solid #82aae3;
+  margin-left: 150px;
+  margin-top: 79px;
+  width: 950px;
+  height: 550px;
 }
 .row {
   display: flex;
