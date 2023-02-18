@@ -184,6 +184,7 @@ main .lower .lower-right img {
   margin-left: 750px;
   margin-top: -600px;
 }
+/*   /////////////////////////////////////// */
 .container {
   background-color: #82aae3;
   height: 100vh;
@@ -194,18 +195,18 @@ main .lower .lower-right img {
   padding-top: 45px;
   color: white;
 }
-
+#image{
+  border : 5px solid #82aae3;
+  margin-left: 150px;
+  margin-top: 79px;
+  width: 950px;
+  height: 550px;
+}
+/*   //////////////////////////////////////////////// */
 .contain {
   max-width: 1170px;
   margin: auto;
   margin-left: 400px;
-}
-#image{
-  border : 5px solid #82aae3;
-  margin-left: 170px;
-  margin-top: 20px;
-  width: 950px;
-  height: 500px;
 }
 .row {
   display: flex;

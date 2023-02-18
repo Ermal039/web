@@ -43,7 +43,7 @@ $allData=$dhenat ->lexoDhenat();
                         <td><?php echo $value['nrtelefonit']?></td>
                         <td id='de'><a href="delete.php?id=<?php echo $value['id']?>"><button id="d">DELETE</button></a>
                            <a  href=""><button id='e'>EDIT</button></td></a>
-                    </tr>
+                    </tr>  
                   <?php
                      }
                   ?>

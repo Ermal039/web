@@ -10,8 +10,6 @@ if(!isset($_SESSION['username'])){
         $hide="hide";
     }
 
-
-
 ?>
 
 
@@ -37,12 +35,12 @@ if(!isset($_SESSION['username'])){
         <ul class="navbar">
           <h1>ORTOMEDIKA</h1>
 
-          <a href="./index.html"><img src="./img/home.png" /></a>
-          <li><a href="./sherbimet.html">Shërbimet Mjeksore</a></li>
-          <li><a href="./stafi.html">Stafi Mjekësor</a></li>
-          <li><a href="./kontakti.html">Kontakti</a></li>
-          <li><a href="./terminet.html">Terminet</a></li>
-          <li id="kyqu"><a href="./kyqu.html">Kyqu</a></li>
+          <a href="./index.php"><img src="./img/home.png" /></a>
+          <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
+          <li><a href="./stafi.php">Stafi Mjekësor</a></li>
+          <li><a href="./kontakti.php">Kontakti</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
+          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
           <a href="logout.php">LogOut</a>
          <a href="dashboard.php" class="<?=$hide?>">Dashboard</a>
         </ul>
@@ -63,7 +61,7 @@ if(!isset($_SESSION['username'])){
         <div class="upper">
           <div class="upper-left">
             <div>
-              <img src="./img/ambulance (1).png" />
+              <img src="./img/ambulance.png" />
             </div>
 
             <div class="text-area">
@@ -79,7 +77,7 @@ if(!isset($_SESSION['username'])){
 
           <div class="upper-right">
             <div>
-              <img src="./img/doctor (1).png" />
+              <img src="./img/doctor.png" />
             </div>
 
             <div class="text-area">
@@ -96,7 +94,7 @@ if(!isset($_SESSION['username'])){
         <div class="lower">
           <div class="lower-left">
             <div>
-              <img src="./img/Sherbimi Mjeksor (1).png" />
+              <img src="./img/Sherbimi Mjeksor.png" />
             </div>
 
             <div class="text-area">
@@ -111,7 +109,7 @@ if(!isset($_SESSION['username'])){
 
           <div class="lower-right">
             <div>
-              <img src="./img/24-hours (1).png" />
+              <img src="./img/24-hours.png" />
             </div>
 
             <div class="text-area">
