@@ -32,6 +32,8 @@ $allData=$dhenat ->lexoDhenat();
                        
                     </tr>
                     <tr>
+
+                    
                       <?php
                      foreach($allData as $key =>$value){
                         $value['emrimbiemri']

@@ -8,6 +8,11 @@ if(isset($_SESSION['username'])){
 
 
 ?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +28,8 @@ if(isset($_SESSION['username'])){
         <div></div>
   
         <ul class="navbar">
+
+          <h1>ORTOMEDIKA</h1>
           <a href="./index.php"><img src="./img/home.png" /></a>
           <li><a href="./sherbimet.php">Shërbimet Mjekësore</a></li>
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
@@ -60,11 +67,15 @@ if(isset($_SESSION['username'])){
 
 
     <script src="./kyqu.js"></script>
-</body>
-</htm>
+  </body>
+</html>
+
 
 <?php
 
 }
 
 ?>
+
+
+
