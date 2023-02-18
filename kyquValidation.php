@@ -23,7 +23,7 @@ if (isset($_POST['loginBtn'])){
                 $_SESSION['password'] =$password;
                 $_SESSION['role']=$user['role'];
                 
-                header("location:home.php");
+                header("location:index.php");
                 exit();
             }else{
                 //nese nuk ju perket userave atehere nuk pranohesh mu bo login
