@@ -1,3 +1,17 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+  header("location:index.php");
+}else{
+  
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,6 +67,13 @@
     <script src="./kyqu.js"></script>
   </body>
 </html>
+
+
+<?php
+
+}
+
+?>
 
 
 
