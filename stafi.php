@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="./css/stafi.css" />
   </head>
   <body>
-    <nav>
-      <!-- PJESA E NAVBAR-IT -->
+  <nav>
+        <!-- PJESA E NAVBAR-IT -->
 
-      <ul class="navbar">
-        <h1>ORTOMEDIKA</h1>
-        <a href="./index.html"><img src="./img/home.png" /></a>
-        <li><a href="./sherbimet.html">Shërbimet Mjekësore</a></li>
-        <li><a href="./stafi.html">Stafi Mjekësor</a></li>
-        <li><a href="./kontakti.html">Kontakti</a></li>
-        <li><a href="./Terminet.html">Terminet</a></li>
+        <ul class="navbar">
+          <h1>ORTOMEDIKA</h1>
 
-        <li id="kyqu"><a href="./kyqu.html">Kyqu</a></li>
-      </ul>
-    </nav>
+          <a href="./index.php"><img src="./img/home.png" /></a>
+          <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
+          <li><a href="./stafi.php">Stafi Mjekësor</a></li>
+          <li><a href="./kontakti.php">Kontakti</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
+          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
+        </ul>
+      </nav>
 
     <!-- Rreshti i pare me staf -->
     <div class="cards1">

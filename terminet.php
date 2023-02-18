@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="./css/terminet.css">
 </head>
 <body>
-    <nav>
+<nav>
         <!-- PJESA E NAVBAR-IT -->
-      <ul class="navbar">
-        <h1>ORTOMEDIKA</h1>
-        <a href="./index.html"><img src="./img/home.png"  /></a>
-        <li><a href="./sherbimet.html">Shërbimet Mjekësore</a></li>
-        <li><a href="./stafi.html">Stafi Mjekësor</a></li>
-        <li><a href="./kontakti.html">Kontakti</a></li>
-        <li><a href="./terminet.html">Terminet</a></li>
-        <li id="kyqu"><a href="./kyqu.html">Kyqu</a></li>
-      </ul>
-    </nav>
+
+        <ul class="navbar">
+          <h1>ORTOMEDIKA</h1>
+
+          <a href="./index.php"><img src="./img/home.png" /></a>
+          <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
+          <li><a href="./stafi.php">Stafi Mjekësor</a></li>
+          <li><a href="./kontakti.php">Kontakti</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
+          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
+        </ul>
+      </nav>
 
         <!-- PJESA E PYETSORIT PER PERDORUESIN -->
 <div class="container">

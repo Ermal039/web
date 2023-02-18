@@ -18,12 +18,12 @@
         <ul class="navbar">
           <h1>ORTOMEDIKA</h1>
 
-          <a href="./index.html"><img src="./img/home.png" /></a>
-          <li><a href="./sherbimet.html">Shërbimet Mjeksore</a></li>
-          <li><a href="./stafi.html">Stafi Mjekësor</a></li>
-          <li><a href="./kontakti.html">Kontakti</a></li>
-          <li><a href="./terminet.html">Terminet</a></li>
-          <li id="kyqu"><a href="./kyqu.html">Kyqu</a></li>
+          <a href="./index.php"><img src="./img/home.png" /></a>
+          <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
+          <li><a href="./stafi.php">Stafi Mjekësor</a></li>
+          <li><a href="./kontakti.php">Kontakti</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
+          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
         </ul>
       </nav>
       <!-- PJESA E TEKSTIT-IT -->
@@ -105,17 +105,21 @@
         </div>
       </div>
 
+      <!-- Foto e Mjekut -->
       <div class="main-img">
         <img src="./img/d.png" />
       </div>
+
     </main>
     <!-- PJESA E LOKACIONEVE -->
 
     <div class="container">
       <h1>Lokacionet tona!</h1>
-      <div class="slider">
+
+      <!-- <div class="slider">
         <img src="" id="image" alt="" />
-      </div>
+      </div> -->
+
     </div>
 
     <!-- PJESA E FOOTER-IT -->
