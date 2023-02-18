@@ -34,6 +34,7 @@
           name="form"
           onsubmit="return validated()"
         >
+
           <div class="font">Emri i Perdoruesit</div>
           <input autocomplete="off" type="text" name="name1" />
           <div id="name1_error">Ju lutem plotsoni emrin</div>
@@ -52,3 +53,8 @@
     <script src="./kyqu.js"></script>
   </body>
 </html>
+
+
+
+
+
