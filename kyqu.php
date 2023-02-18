@@ -23,12 +23,12 @@ if(isset($_SESSION['username'])){
         <div></div>
   
         <ul class="navbar">
-          <a href="./index.html"><img src="./img/home.png" /></a>
-          <li><a href="./sherbimet.html">Shërbimet Mjekësore</a></li>
-          <li><a href="./stafi.html">Stafi Mjekësor</a></li>
-          <li><a href="./kontakti.html">Kontakti</a></li>
-          <li><a href="./terminet.html">Terminet</a></li>
-          <li id="kyqu"><a href="./kyqu.html">Kyqu</a></li>
+          <a href="./index.php"><img src="./img/home.png" /></a>
+          <li><a href="./sherbimet.php">Shërbimet Mjekësore</a></li>
+          <li><a href="./stafi.php">Stafi Mjekësor</a></li>
+          <li><a href="./kontakti.php">Kontakti</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
+          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
         </ul>
       </nav>
 
@@ -50,7 +50,7 @@ if(isset($_SESSION['username'])){
                 <input type="submit" value ="login" name= "loginBtn">
              
     
-               <a  id="paragraph"  href="./regjistrohu.html">Nuk keni llogari? </a>
+               <a  id="paragraph"  href="./regjistrohu.php">Nuk keni llogari? </a>
             </form>
         </div>
     
