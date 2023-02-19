@@ -92,7 +92,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 30px;
 }
 .card {
   text-align: center;

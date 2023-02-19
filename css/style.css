@@ -195,13 +195,7 @@ main .lower .lower-right img {
   padding-top: 45px;
   color: white;
 }
-#image{
-  border : 5px solid #82aae3;
-  margin-left: 250px;
-  margin-top: 79px;
-  width: 450px;
-  height: 750px;
-}
+
 /*   //////////////////////////////////////////////// */
 .contain {
   max-width: 1170px;

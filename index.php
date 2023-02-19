@@ -25,6 +25,15 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script defer src="./script.js"></script>
+    <style>
+      #image{
+    border : 5px solid #82aae3;
+    margin-left: 280px;
+    margin-top: 30px;
+    width: 750px;
+    height: 450px;
+  }
+    </style>
   </head>
   <body>
     <header>
@@ -148,10 +157,10 @@ if(!isset($_SESSION['username'])){
           <div class="footer-col">
             <h4>ORTOMEDIKA</h4>
             <ul>
-              <li><a href="./sherbimet.html">Sherbimet</a></li>
-              <li><a href="./stafi.html">Stafi</a></li>
-              <li><a href="./terminet.html">Terminet</a></li>
-              <li><a href="./kyqu.html">Kyqu</a></li>
+              <li><a href="./sherbimet.php">Sherbimet</a></li>
+              <li><a href="./stafi.php">Stafi</a></li>
+              <li><a href="./lokacionet.php">Lokacionet</a></li>
+              <li><a href="./kyqu.php">Kyqu</a></li>
             </ul>
           </div>
           <div class="footer-col">
