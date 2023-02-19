@@ -45,8 +45,11 @@
           si diagnoza, mjekim, terapi, kirurgji dhe kujdesi intensiv. Spitalet
           janë të rëndësishme për shëndetin e shoqërisë dhe ndihmojnë në
           parandalimin dhe trajtimin e sëmundjeve, duke siguruar kujdesin
-          mjekësor më të mirë për pacientët. Ortomedika-Pejë është një
-          institucion shëndetësor që ka krijuar besim në popullatë dhe vazhdon
+          mjekësor më të mirë për pacientët. Shpesh herë, ata janë përgjegjës për monitorimin
+           dhe trajtimin e pacientëve me sëmundje kronike dhe akute. 
+          Në disa raste, ato ofrojnë edhe shërbime kirurgjikale dhe diagnostikim. 
+          Spitali gjithashtu ofronë shërbime psikiatrike dhe rehabilituese, si dhe shërbime të tjera të mjekësisë alternative.
+          Ortomedika-Pejë është një institucion shëndetësor që ka krijuar besim në popullatë dhe vazhdon
           të shërbejë me përkushtim dhe profesionalizëm.
         </p>
       </div>
@@ -113,7 +116,9 @@
           ndihmuar në diagnozën dhe trajtimin e sëmundjeve të ndryshme.
           Ortomedika-Mitrovicë është vendi ku shumë pacientë shkojnë për të
           marrë trajtimin mjekësor të nevojshëm dhe për të gjetur mbështetjen
-          dhe kujdesin e nevojshëm për shëndetin e tyre.
+          dhe kujdesin e nevojshëm për shëndetin e tyre.Spitalet mund te ofrojne edhe sherbime te tjera, 
+          siç jane ndihmë psikologjike, terapi per zhvillimin e kujdesit te specializuar dhe kujdesit pas operacionit, etj.
+           Pjesa me e madhe e spitalet ofrojne dhe sherbime te tjera, siç jane shperndarja e ilaceve, linja e emergjencave, kujdesi paliativ etj.
         </p>
       </div>
     </div>
