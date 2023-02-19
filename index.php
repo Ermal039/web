@@ -130,14 +130,16 @@ if(!isset($_SESSION['username'])){
     </main>
     <!-- PJESA E LOKACIONEVE -->
     
+
     <div class="container">
       <h1>Lokacionet tona!</h1>
-<div class="slider">
-  <img src="" id="image" alt="">
-</div>
+       <div class="slider">
+       <img src="" id="image" alt="">
+        </div>
+         </div>
+      <script src="slider.js"></script>
     
-    </div>
-<script src="script1.js"></script>
+    
     <!-- PJESA E FOOTER-IT -->
 
     <footer class="footer">

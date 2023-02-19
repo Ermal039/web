@@ -197,10 +197,10 @@ main .lower .lower-right img {
 }
 #image{
   border : 5px solid #82aae3;
-  margin-left: 150px;
+  margin-left: 250px;
   margin-top: 79px;
-  width: 950px;
-  height: 550px;
+  width: 450px;
+  height: 750px;
 }
 /*   //////////////////////////////////////////////// */
 .contain {

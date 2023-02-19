@@ -1,4 +1,22 @@
 <?php
+class Users{
+    private $name;
+    private $surname;
+    private $email;
+    private $username;
+    private $password;
+    private $role;
+
+    public function __construct($name,$surname,$email,$username,$password,$role){
+        $this->name=$name;
+        $this->surname=$surname;
+        $this->email=$email;
+        $this->username=$username;
+        $this->password=$password;
+        $this->role=$role;
+    }
+}
+
 
 $user1=[
     "name" => "Anda",

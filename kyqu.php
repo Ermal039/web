@@ -45,7 +45,7 @@ if(isset($_SESSION['username'])){
 
         <div class="left-container">
 
-        <form action="kyquValidation.php" method="post">
+        <form action="kyquValidation.php" method="post" action >
                 
                 <div class="font">Emri i Perdoruesit </div>
                 <input  type="text" name="username" >
@@ -57,7 +57,8 @@ if(isset($_SESSION['username'])){
                 <input type="submit" value ="login" name= "loginBtn">
              
     
-               <a  id="paragraph"  href="./regjistrohu.php">Nuk keni llogari? </a>
+               <a  id="paragraph"  href="./regjistrimi.php">Nuk keni llogari? </a>
+        
             </form>
         </div>
     

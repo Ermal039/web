@@ -4,7 +4,6 @@ require_once('modeli.php');
 $dhenat=new regjistrohu();
 $allData=$dhenat ->lexoDhenat();
 
-
 ?>
 
 
@@ -46,6 +45,7 @@ $allData=$dhenat ->lexoDhenat();
                         <td id='de'><a href="delete.php?id=<?php echo $value['id']?>"><button id="d">DELETE</button></a>
                            <a  href=""><button id='e'>EDIT</button></td></a>
                     </tr>  
+                    
                   <?php
                      }
                   ?>

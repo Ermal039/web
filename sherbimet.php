@@ -21,6 +21,7 @@
           <li><a href="./kontakti.php">Kontakti</a></li>
           <li><a href="./terminet.php">Terminet</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
+          <li><a href="./admin_page.php">Page</a></li>
         </ul>
       </nav>
     </header>
