@@ -39,7 +39,7 @@ if(!isset($_SESSION['username'])){
           <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
-          <li><a href="./terminet.php">Terminet</a></li>
+          <li><a href="./lokacionet.php">Lokacionet</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
           <a href="logout.php">LogOut</a>
          <a href="dashboard.php" class="<?=$hide?>">Dashboard</a>
