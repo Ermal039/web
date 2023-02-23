@@ -239,24 +239,16 @@ html {
   border-radius: 20px;
   margin-right: 20px;
 }
-.card {
-  width: 30%;
-  height: 350px;
-  margin: 20px;
-  flex-wrap: wrap;
-}
-
 .cards{
-  
-  width: 100%;
   display: flex;
-  justify-content: space-around;
-  height: auto;
-  align-items: center;
-  flex-basis: 33.3333%;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 100px;
 
+}
+.card{
+  width: 400px;
+  margin-top: 50px;
 }
 /*.cards1 {
   display: flex;

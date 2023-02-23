@@ -32,7 +32,6 @@ if(isset($_SESSION['username'])){
           <li><a href="./sherbimet.php">Shërbimet Mjekësore</a></li>
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
-          <li><a href="./lokacionet.php">Lokacionet</a></li>
           <li><a href="./terminet.php">Terminet</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
         </ul>
