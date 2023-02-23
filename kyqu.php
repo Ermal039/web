@@ -11,8 +11,6 @@ if(isset($_SESSION['username'])){
 
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,6 +33,7 @@ if(isset($_SESSION['username'])){
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
           <li><a href="./lokacionet.php">Lokacionet</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
         </ul>
       </nav>
@@ -57,7 +56,7 @@ if(isset($_SESSION['username'])){
                 <input type="submit" value ="login" name= "loginBtn">
              
     
-               <a  id="paragraph"  href="./regjistrimi.php">Nuk keni llogari? </a>
+               <a  id="paragraph"  href="./insert.php">Nuk keni llogari? </a>
         
             </form>
         </div>
@@ -67,7 +66,7 @@ if(isset($_SESSION['username'])){
 
 
 
-    <script src="./kyqu.js"></script>
+    <script src="./js/kyqu.js"></script>
   </body>
 </html>
 

@@ -24,7 +24,7 @@ if(!isset($_SESSION['username'])){
     <title>ORTOMEDIKA</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script defer src="./script.js"></script>
+    <script defer src="./js/script.js"></script>
     <style>
       #image{
     border : 5px solid #82aae3;
@@ -49,6 +49,7 @@ if(!isset($_SESSION['username'])){
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
           <li><a href="./lokacionet.php">Lokacionet</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
           <a href="logout.php">LogOut</a>
          <a href="dashboard.php" class="<?=$hide?>">Dashboard</a>
@@ -146,7 +147,7 @@ if(!isset($_SESSION['username'])){
        <img src="" id="image" alt="">
         </div>
          </div>
-      <script src="slider.js"></script>
+      <script src="./js/slider.js"></script>
     
     
     <!-- PJESA E FOOTER-IT -->

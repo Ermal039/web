@@ -16,10 +16,7 @@ $allData=$dhenat ->lexoDhenat();
     </head>
     <body>
         <div id="a1">
-            <header>
-                <h3>Ju lutem shtype per te regjistruar te dhenat ne Sistem</h3>
-                <a href="insert.php"><Button id='r'>Regjistrohu</Button></a>
-            </header>
+            
             <table>
             <hr>
             <p>Lista e te dhenave:</p>
@@ -43,7 +40,7 @@ $allData=$dhenat ->lexoDhenat();
                         <td><?php echo $value['fjalkalimi']?></td>
                         <td><?php echo $value['nrtelefonit']?></td>
                         <td id='de'><a href="delete.php?id=<?php echo $value['id']?>"><button id="d">DELETE</button></a>
-                           <a  href=""><button id='e'>EDIT</button></td></a>
+                           <a  href="edit.php?id=<?php echo $value['id']?>"><button id='e'>EDIT</button></td></a>
                     </tr>  
                     
                   <?php

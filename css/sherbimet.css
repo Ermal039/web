@@ -78,9 +78,10 @@ html {
 
 .card {
   position: relative;
-  width: 300px;
+  width: 30%;
   height: 350px;
   margin: 20px;
+  
 }
 .card .face {
   position: absolute;
@@ -144,7 +145,7 @@ html {
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
-.cards1 {
+/*.cards1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,6 +163,18 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+}*/
+.cards{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  flex-basis: 33.3333%;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 
@@ -227,26 +240,43 @@ html {
   margin-right: 20px;
 }
 .card {
-  width: 400px;
+  width: 30%;
   height: 350px;
   margin: 20px;
+  flex-wrap: wrap;
 }
-.cards1 {
+
+.cards{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  flex-basis: 33.3333%;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+/*.cards1 {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .cards2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .cards3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-}
+  flex-wrap: wrap;
+}*/
 
 
 

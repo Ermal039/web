@@ -73,8 +73,8 @@ class regjistrohu extends dbConnect{
         $stm ->execute();
 
          echo "<script>
-         alert('dhenat jane regjistruar me sukses');
-         document.location='regjistrimi.php';
+         alert('Te dhenat jane regjistruar me sukses');
+        // document.location='regjistrimi.php';
          </script>";
     }
     public function lexoDhenat()
@@ -87,6 +87,22 @@ class regjistrohu extends dbConnect{
 
    return $rezultati;
     }
+public function lexoDhenatSipasIDs($id){
+    $sql = 'SELECT * FROM regjistrohu where id=:id';
+
+    $stm=$this->dbconn->prepare($sql);
+    $stm->execute([':id'=>$this->id=$id]);
+    $rezultati=$stm->fetch(PDO::FETCH_ASSOC);
+    return $rezultati;
+}
+
+    public function updateDhenat(){
+        $sql='UPDATE regjistrohu SET emrimbiemri=?,email=?,fjalkalimi=?,nrtelefonit=? where id=?';
+
+            $stm=$this->dbconn->prepare($sql);
+            $stm->execute([$this->emrimbiemri,$this->email,$this->fjalkalimi,$this->nrtelefonit,$this->id]);
+    }
+   
     public function deleteDhenat($id){
         $sql="DELETE FROM regjistrohu where id=:id";
         $stm=$this->dbconn->prepare($sql);
@@ -94,7 +110,7 @@ class regjistrohu extends dbConnect{
         $stm ->execute();
         if($stm == true){
             echo "<script>
-            alert('te dhenat jane DELETE me sukses');
+            alert('Te dhenat jane fshire me sukses');
             document.location='regjistrimi.php';
             </script>";
         }else{
@@ -102,7 +118,39 @@ class regjistrohu extends dbConnect{
         }
         }
 
+  
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

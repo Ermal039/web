@@ -19,6 +19,7 @@
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
           <li><a href="./lokacionet.php">Lokacionet</a></li>
+          <li><a href="./terminet.php">Terminet</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
         </ul>
       </nav>
@@ -28,31 +29,32 @@
         <!-- PJESA E DERGIMIT TE MESAZHIT -->
         <div class="contactForm">
           <h2>Dergoni Mesazh</h2>
-
+         
+          
           <div class="formBox">
             <div class="inputBox w50">
-              <input type="text" required />
+              <input type="text" name="name" required />
               <span>Emri</span>
             </div>
 
             <div class="inputBox w50">
-              <input type="text" required />
+              <input type="text" name="surname" required />
               <span>Mbiemri</span>
             </div>
 
             <div class="inputBox w50">
-              <input type="email" required />
+              <input type="email" name="email" required />
               <span>Emaili</span>
             </div>
 
             <div class="inputBox w50">
-              <input type="text" required />
+              <input type="text"name= "phone" required />
               <span>Numri Telefonit</span>
             </div>
 
             <div class="inputBox w100">
               <span>Shkruani mesazhin këtu...</span>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
             </div>
 
             <div class="inputBox" id="send">
@@ -113,5 +115,7 @@
         </div>
       </div>
     </section>
+
+
   </body>
 </html>
