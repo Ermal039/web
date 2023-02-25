@@ -20,7 +20,7 @@ header {
       rgba(26, 10, 10, 0.007),
       rgba(19, 11, 11, 0.7)
     ),
-    url(../img/bg.jpg);
+    url(../img/bg2.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -34,10 +34,10 @@ header {
   list-style-type: none;
   padding-right: 15px;
   padding-bottom: 5px;
-  background-color: white;
+  /* background-color: white; */
 }
 .navbar h1 {
-  color: #82aae3;
+  color: black;
   margin-right: 400px;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -96,13 +96,13 @@ section {
 }
 section p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: white;
+  color: black;
 }
 #butoni {
   text-decoration: none;
   padding: 15px 20px;
   background-color: #82aae3;
-  color: white;
+  color: black;
   font-weight: bold;
   border-radius: 5px;
   margin-left: 85%;
