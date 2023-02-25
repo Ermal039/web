@@ -2,7 +2,7 @@
 
 require_once ('connection.php');
 
-class termini extends dbConnect{
+class termini extends dbConnecti{
     private $id;
     private $numripersonal;
     private $emri;

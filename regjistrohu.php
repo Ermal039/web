@@ -23,21 +23,23 @@ if(isset($_POST['save'])){
     </head>
     <body>
         <div id="formulari">
-        <h3>Shto te dhenat ne Formularin e Regjistrimit</h3>
+        <h2>Shto te dhenat ne formularin e Regjistrimit</h2>
+        <br>
+        <br>
         <form action="" onsubmit="return validateFormRegjistrimi()" name="myForm"  method="post">
                 <label>Emri dhe Mbiemri</label>
-                <input type="text" class="inp" name="emrimbiemri" placeholder="shto emrin dhe mbiemrin..."/>
+                <input type="text" class="inp" name="emrimbiemri" placeholder="Shto emrin dhe mbiemrin..."/>
                 
                 <label>Email</label>
-                <input type="text" class="inp" name="email" placeholder="shto email..."/>
+                <input type="text" class="inp" name="email" placeholder="Shto email..."/>
 
                
                 <label>Fjalkalimi</label>
-                <input type="password" class="inp" name="fjalkalimi" placeholder="shto fjalkalimin..."/>
+                <input type="password" class="inp" name="fjalkalimi" placeholder="Shto fjalkalimin..."/>
                
                 <label>Nr.Telefonit</label>
-                <input type="text" class="inp" name="nrtelefonit" placeholder="shto nrtelefonit"/>
-                <button name='save'>RUAJ</button>
+                <input type="text" class="inp" name="nrtelefonit" placeholder="Shto nrtelefonit"/>
+                <button name='save'>REGJISTROHU</button>
             </form>
         </div>
     </body>

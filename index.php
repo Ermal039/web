@@ -47,11 +47,11 @@ if(!isset($_SESSION['emrimbiemri'])){
           <a href="./index.php"><img src="./img/home.png" /></a>
           <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
-          <li><a href="./kontakti.php">Kontakti</a></li>
+          <li><a href="./contact.php">Kontakti</a></li>
           <li><a href="./terminet.php">Terminet</a></li>
-          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
-          <a href="logout.php">LogOut</a>
-         <a href="dashboard.php" class="<?=$hide?>">Dashboard</a>
+          <!-- <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li> -->
+          <li><a href="menuDashboard.php" class="<?=$hide?>">Dashboard</a></li>
+          <li><a href="logout.php">LogOut</a></li>
         </ul>
       </nav>
       <!-- PJESA E TEKSTIT-IT -->
@@ -159,7 +159,7 @@ if(!isset($_SESSION['emrimbiemri'])){
             <ul>
               <li><a href="./sherbimet.php">Sherbimet</a></li>
               <li><a href="./stafi.php">Stafi</a></li>
-              <li><a href="./lokacionet.php">Lokacionet</a></li>
+              <li><a href="./terminet.php">Terminet</a></li>
               <li><a href="./kyqu.php">Kyqu</a></li>
             </ul>
           </div>

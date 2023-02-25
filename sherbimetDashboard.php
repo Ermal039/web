@@ -63,8 +63,8 @@ require_once ('sherbimetController.php');
               <th>Foto</th>
               <th>Titulli</th>
               <th>Permbajtja</th>
-              <th>Ndryshime</th>
-              <th>Fshirja</th>
+              <th>Ndrysho</th>
+              <th>Fshij</th>
             </tr>
         </thead>
 
@@ -77,8 +77,8 @@ foreach($allsherbimetmjeksore as $sherbimetmjeksore): ?>
               <td><?php echo $sherbimetmjeksore['image'];?></td>
               <td><?php echo $sherbimetmjeksore['title'];?></td>
               <td><?php echo $sherbimetmjeksore['body'];?></td>
-              <td><a href="edit-sherbimet.php?id=<?php echo $sherbimetmjeksore['id'];?>">EDIT</a></td>
-              <td><a href="delete-sherbimet.php?id=<?php echo $sherbimetmjeksore['id'];?>">DELETE</a></td>
+              <td><a href="edit-sherbimet.php?id=<?php echo $sherbimetmjeksore['id'];?>">Edit</a></td>
+              <td><a href="delete-sherbimet.php?id=<?php echo $sherbimetmjeksore['id'];?>">Delete</a></td>
             </tr>
             <?php endforeach; ?>
              </tbody>

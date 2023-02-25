@@ -9,7 +9,7 @@ class KyquUsers{
 
 
     function __construct(){
-        $conn = new dbConnect;
+        $conn = new dbConnectii;
         $this->connection = $conn->connectDB();
     }
 

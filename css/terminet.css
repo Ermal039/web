@@ -1,3 +1,10 @@
+/* 
+#82AAE3
+#91D8E4
+#BFEAF5
+#EAFDFC */
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -84,7 +91,7 @@ html {
 
 body{
    margin-left: 50px;
-  background-color: lightblue;
+  background-color:#BFEAF5  ;
   align-items: center;
   justify-content: center;
   min-height: 100vh;

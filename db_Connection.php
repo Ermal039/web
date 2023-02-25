@@ -1,5 +1,5 @@
 <?php
-class dbConnect{
+class dbConnectii{
     private $conn =null;
     private $host = 'localhost';
     private $dbname = 'regjistrimi';
@@ -24,6 +24,6 @@ class dbConnect{
          }
     }
     
-    $link = new dbConnect();
+    $link = new dbConnectii();
     $link ->connectDB();
     ?>

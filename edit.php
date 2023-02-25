@@ -35,7 +35,9 @@ $record=$dhenat->lexoDhenatSipasIDs($myId);
     </head>
     <body>
         <div id="formulari">
-        <h3>Shto te dhenat ne Formularin e Regjistrimit</h3>
+        <h2>Ndrysho te dhenat ne Formularin e Regjistrimit</h2>
+        <br>
+        <br>
             <form action='' method="POST">
                 <label>Emri dhe Mbiemri</label>
                 <input type="text" class="inp" name="emrimbiemri"

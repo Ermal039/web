@@ -1,14 +1,14 @@
 <?php
 
-require_once ('DB_Connection.php');
+require_once ('db_Connection.php');
 
-class regjistrohu extends dbConnect{
-    private $id;
-    private $emrimbiemri;
-    private $email;
-    private $fjalkalimi;
-    private $nrtelefonit;
-    private $dbconn;
+class regjistrohu extends dbConnectii{
+    public $id;
+    public $emrimbiemri;
+    public $email;
+    public $fjalkalimi;
+    public $nrtelefonit;
+    public $dbconn;
 
     public function __construct($id='',$emrimbiemri='',$email='',$fjalkalimi='',$nrtelefonit='')
     {
@@ -58,6 +58,14 @@ class regjistrohu extends dbConnect{
     }
 
     //Pjesa e me poshtme eshte krijimi i crud, insert,delete,update
+    public function lexoDhenat(){
+        $sql="SELECT * FROM regjistrohu";
+        $stm=$this->dbconn->prepare($sql);
+        $stm->execute();
+        $rezultati= $stm->FETCHALL(PDO::FETCH_ASSOC); 
+        return $rezultati;
+    }
+
     public function insertoDhenat(){
        $sql="INSERT INTO regjistrohu (emrimbiemri,email,fjalkalimi,nrtelefonit) VALUES (:emrimbiemri,:email,:fjalkalimi,:nrtelefonit)";
         $stm=$this ->dbconn ->prepare ($sql);
@@ -73,30 +81,19 @@ class regjistrohu extends dbConnect{
         // document.location='regjistrimi.php';
          </script>";
     }
-    public function lexoDhenat()
-    {
-    $sql="SELECT * FROM regjistrohu";
-    $stm=$this->dbconn->prepare($sql);
-     
-    $stm->execute();
-  $rezultati= $stm->FETCHALL(PDO::FETCH_ASSOC); 
 
-   return $rezultati;
+    public function lexoDhenatSipasIDs($id){
+        $sql = 'SELECT * FROM regjistrohu where id=:id';
+        $stm=$this->dbconn->prepare($sql);
+        $stm->execute([':id'=>$this->id=$id]);
+        $rezultati=$stm->fetch(PDO::FETCH_ASSOC);
+        return $rezultati;
     }
-public function lexoDhenatSipasIDs($id){
-    $sql = 'SELECT * FROM regjistrohu where id=:id';
-
-    $stm=$this->dbconn->prepare($sql);
-    $stm->execute([':id'=>$this->id=$id]);
-    $rezultati=$stm->fetch(PDO::FETCH_ASSOC);
-    return $rezultati;
-}
 
     public function updateDhenat(){
         $sql='UPDATE regjistrohu SET emrimbiemri=?,email=?,fjalkalimi=?,nrtelefonit=? where id=?';
-
-            $stm=$this->dbconn->prepare($sql);
-            $stm->execute([$this->emrimbiemri,$this->email,$this->fjalkalimi,$this->nrtelefonit,$this->id]);
+        $stm=$this->dbconn->prepare($sql);
+        $stm->execute([$this->emrimbiemri,$this->email,$this->fjalkalimi,$this->nrtelefonit,$this->id]);
     }
    
     public function deleteDhenat($id){

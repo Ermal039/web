@@ -1,12 +1,12 @@
 <?php
-require_once ('Database.php');
+require_once ('Databasee.php');
 
 
 class sherbimi{
-    private $Id;
-    private $image;
-    private $title;
-    private $body;
+    public $Id;
+    public $image;
+    public $title;
+    public $body;
     public $db;
 
 
@@ -15,7 +15,7 @@ class sherbimi{
         $this ->image=$image;
         $this ->title=$title;
         $this ->body=$body;
-        $this->db = new Database;
+        $this->db = new Databasee;
     }
     public function setId($id){
         $this ->id=$id;
