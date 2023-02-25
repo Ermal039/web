@@ -35,7 +35,7 @@ require_once ('sherbimetController.php');
    
     <div class="cards">
     <?php
-    $sherbimet = new sherbimetController;
+    $sherbimet = new sherbimi();
     $all = $sherbimet->readData();
     for($i = 0; $i < count($all); $i++){
         echo '<div class="card">

@@ -55,20 +55,22 @@ require_once ('modeliterminet.php');
     <table class="content-table">
         <thead>
             <tr>
-              <th>numripersonal</th>
-              <th>emri</th>
-              <th>mbiemri</th>
-              <th>emaili</th>
-              <th>fjalekalimi</th>
-              <th>sherbimi</th>
-              <th>mjeku</th>
-              <th>data</th>
+              <th>Numripersonal</th>
+              <th>Emri</th>
+              <th>Mbiemri</th>
+              <th>Emaili</th>
+              <th>Fjalekalimi</th>
+              <th>Sherbimi</th>
+              <th>Mjeku</th>
+              <th>Data</th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
         </thead>
 
         <tbody>
 <?php
-$ter = new modeliterminet;
+$ter = new termini();
 $allterminet = $ter->readData();
 foreach($allterminet as $terminet): ?>
     <tr>

@@ -2,12 +2,12 @@
 
 session_start();
 // me kqyr a o i jept ni username edhe qit username nuk e dergon ne php por kur del prej dashboard me dergu ne log in
-if(!isset($_SESSION['username'])){
+if(!isset($_SESSION['emrimbiemri'])){
     header("location:kyqu.php");
 
 }else{
     if($_SESSION['role']== 'user'){
-        header("location:home.php");
+        header("location:index.php");
     }else{
     
     
@@ -177,7 +177,7 @@ display: none;
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
           <li><a href="./lokacionet.php">Lokacionet</a></li>
-          <li><a href="./regjistrimi.php">Regjistrimi</a></li>
+          <li><a href="./insert.php">Regjistrimi</a></li>
           <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
 
       

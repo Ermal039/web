@@ -1,43 +1,54 @@
 <?php
-
 include_once 'users.php';
-//isset = funksion me shiku a e ka marr 1 vler qe eshte e ndryshme prej null
-//a jane marr te dhenat prej momentin qe u bo login
-if (isset($_POST['loginBtn'])){
-    if(empty($_POST['username']) || empty ($_POST['password'])){
-        echo "Ju lutem plotesoni te dhenat e zbrazeta";
+
+if(isset($_POST['login'])){
+    if(empty($_POST['emrimbiemri']) || empty($_POST['fjalkalimi'])){
+
+        echo "<script>
+         alert('Ju lutem mbusheni vendet e zbrazëta!');
+         document.location='kyqu.php';
+         </script>";
+   
     }else{
-         $username = $_POST['username'];
-         $password = $_POST['password'];
+        $emrimbiemri = $_POST['emrimbiemri'];
+        $fjalkalimi = $_POST['fjalkalimi'];
+        $logInUsers = new KyquUsers();
+        $users = $logInUsers->getUsersEmridheFjalekalimi();
+    
+        $i=0;
+        foreach($users as $user){
+           $i++;
+           if($emrimbiemri == $user['emrimbiemri'] && $fjalkalimi == $user['fjalkalimi']){
 
-         //iteron te user1 edhe user2
-         $i=0;
-         foreach($users as $user){
-            $i++;
-            if($username == $user['username'] && $password == $user['password']){
+            session_start();
 
-                session_start();
+            $_SESSION['emrimbiemri']=$emrimbiemri;
+            $_SESSION['fjalkalimi']=$fjalkalimi;
+            $_SESSION['role']=$user['role'];
+
+
+            header ("location:index.php");
+            exit();
+
+
+           }else{
+            if($i == sizeOf($users)){
                 
-                //mi bo set
-                $_SESSION ['username']= $username;
-                $_SESSION['password'] =$password;
-                $_SESSION['role']=$user['role'];
-                
-                header("location:index.php");
+           echo "<script>
+           alert('EmriMbiemri ose Fjalekalimi nuk janë të saktë!');
+           document.location='kyqu.php';
+           </script>";
                 exit();
-            }else{
-                //nese nuk ju perket userave atehere nuk pranohesh mu bo login
-                if($i == sizeOf($users)){
-               echo "Username ose Passwordi jane gabim!";
-                exit();
-                }
             }
-         }
+           }
 
+        }
     }
+
 }
 
 
+?>
 
 
 

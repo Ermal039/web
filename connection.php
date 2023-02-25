@@ -25,3 +25,4 @@ class dbConnect{
 
 $link = new dbConnect();
 $link ->connectDB();
+?>

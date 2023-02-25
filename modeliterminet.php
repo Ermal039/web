@@ -94,7 +94,7 @@ class termini extends dbConnect{
 
 
     public function readData(){
-        $query = $this->db->pdo->query('SELECT * from terminet');
+        $query = $this->dbconn->query('SELECT * from terminet');
 
         return $query->fetchAll();
     }
@@ -118,8 +118,8 @@ class termini extends dbConnect{
          document.location='terminet.php';
          </script>";
     }
-    /*public function edit($id){
-        $query = $this->db->pdo->prepare('SELECT * from terminet WHERE id = :id');
+    public function edit($id){
+        $query = $this->dbconn->prepare('SELECT * from terminet WHERE id = :id');
         $query->bindParam(':id', $id);
         $query->execute();
 
@@ -127,7 +127,7 @@ class termini extends dbConnect{
     }
 
     public function update($request, $id){
-        $query = $this->db->pdo->prepare('UPDATE terminet SET numripersonal = :numripersonal,
+        $query = $this->dbconn->prepare('UPDATE terminet SET numripersonal = :numripersonal,
         emri = :emri, mbiemri = :mbiemri,emaili = :emaili,fjalekalimi = :fjalekalimi,sherbimi = :sherbimi,mjeku = :mjeku,data = :data WHERE id = :id');
         $query->bindParam(':numripersonal', $request['numripersonal']);
         $query->bindParam(':emri', $request['emri']);
@@ -144,11 +144,11 @@ class termini extends dbConnect{
     }
 
     public function delete($id){
-        $query = $this->db->pdo->prepare('DELETE from terminet WHERE id=:id');
+        $query = $this->dbconn->prepare('DELETE from terminet WHERE id=:id');
         $query->bindParam(':id', $id);
         $query->execute();
 
         return header("Location: terminetDashboard.php");
-    }*/
+    }
 }
 

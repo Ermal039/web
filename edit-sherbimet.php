@@ -4,7 +4,7 @@ if(isset($_GET['id'])){
     $sherbimetId= $_GET['id'];
 }
 
-$sherbimetmjeksore = new sherbimetController;
+$sherbimetmjeksore = new sherbimi();
 $currentsherbimet = $sherbimetmjeksore->edit( $sherbimetId);
 
 if(isset($_POST['submit'])){
@@ -12,8 +12,11 @@ if(isset($_POST['submit'])){
 }
 ?>
 
+
+ 
 <form method="post">
 Foto:
+
 <input type="file" name="image" value="<?php echo $currentsherbimet['image']; ?>">
 <br>
 Titulli:
@@ -24,4 +27,5 @@ Permbajtja:
 <br>
 <input type="submit" name="submit" value="Update">
 </form>
+
 

@@ -1,3 +1,20 @@
+<?php
+require_once('modelikontakti.php');
+if(isset($_POST['submit'])){
+    $kon=new kontakti();
+    $kon -> setEmri($_POST['emri']);
+    $kon -> setMbiemri($_POST['mbiemri']);
+    $kon -> setEmaili($_POST['emaili']);
+    $kon -> setNrTelefonit($_POST['nrtelefonit']);
+    $kon -> setMesazhi($_POST['mesazhi']);
+   
+
+    $kon ->insertoDhenat();
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,61 +23,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakti</title>
     <link rel="stylesheet" href="./css/kontakti.css" />
+    <script defer src="kontakti.js"></script>
   </head>
   <body>
-  <nav>
-        <!-- PJESA E NAVBAR-IT -->
+    <nav>
+      <!-- PJESA E NAVBAR-IT -->
 
-        <ul class="navbar">
-          <h1>ORTOMEDIKA</h1>
+      <ul class="navbar">
+        <h1>ORTOMEDIKA</h1>
 
-          <a href="./index.php"><img src="./img/home.png" /></a>
-          <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
-          <li><a href="./stafi.php">Stafi Mjekësor</a></li>
-          <li><a href="./kontakti.php">Kontakti</a></li>
-          <li><a href="./terminet.php">Terminet</a></li>
-          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
-        </ul>
-      </nav>
+        <a href="./index.php"><img src="./images/home.png" /></a>
+        <li><a href="./sherbimet.php">Shërbimet Mjeksore</a></li>
+        <li><a href="./stafi.php">Stafi Mjekësor</a></li>
+        <li><a href="./kontakti.php">Kontakti</a></li>
+        <li><a href="./lokacionet.php">Lokacionet</a></li>
+        <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
+      </ul>
+    </nav>
+
 
     <section>
       <div class="container">
         <!-- PJESA E DERGIMIT TE MESAZHIT -->
-        <div class="contactForm">
+         <div class="contactForm">
           <h2>Dergoni Mesazh</h2>
-         
+          <form action="" onsubmit="return validateContactForm()" name="contact-form"  method="post">
           
-          <div class="formBox">
-            <div class="inputBox w50">
-              <input type="text" name="name" required />
-              <span>Emri</span>
-            </div>
+            <div class="formBox">
+              <div class="inputBox w50">
+                <input type="text" name="emri"  />
+                <span>Emri</span>
+              </div>
 
-            <div class="inputBox w50">
-              <input type="text" name="surname" required />
-              <span>Mbiemri</span>
-            </div>
+              <div class="inputBox w50">
+                <input type="text" name="mbiemri"  />
+                <span>Mbiemri</span>
+              </div>
 
-            <div class="inputBox w50">
-              <input type="email" name="email" required />
-              <span>Emaili</span>
-            </div>
+              <div class="inputBox w50">
+                <input type="email" name="emaili"  />
+                <span>Emaili</span>
+              </div>
 
-            <div class="inputBox w50">
-              <input type="text"name= "phone" required />
-              <span>Numri Telefonit</span>
-            </div>
+              <div class="inputBox w50">
+                <input type="text" name="nrtelefonit"  />
+                <span>Numri Telefonit</span>
+              </div>
 
-            <div class="inputBox w100">
-              <span>Shkruani mesazhin këtu...</span>
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
-            </div>
+              <div class="inputBox w100">
+                <span>Shkruani mesazhin këtu...</span>
+                <textarea name="mesazhi" id="" cols="30" rows="10"></textarea>
+              </div>
 
-            <div class="inputBox" id="send">
-              <input type="submit" value="Send" />
+              <div class="inputBox" id="send">
+                <input type="submit" name="submit" value="Send" />
+              </div>
             </div>
           </div>
-        </div>
+</from>
+
+    
 
         <!-- PJESA E INFO KONTAKTIT -->
         <div class="contactInfo">
@@ -69,17 +91,17 @@
           </div>
           <ul class="info">
             <li>
-              <span> <img src="./img/location.png" /></span>
+              <span> <img src="./images/location.png" /></span>
               <span> Ortomedika, Prishtinë </span>
             </li>
 
             <li>
-              <span> <img src="./img/email.png" /></span>
+              <span> <img src="./images/email.png" /></span>
               <span> spitaliortomedika@hotmail.com </span>
             </li>
 
             <li>
-              <span> <img src="./img/telephone-call.png" /></span>
+              <span> <img src="./images/telephone-call.png" /></span>
               <span> +383 44 123 456 </span>
             </li>
           </ul>
@@ -100,21 +122,21 @@
 
           <ul class="media">
             <li>
-              <a href=""> <img src="./img/facebook-contact form.png" /> </a>
+              <a href=""> <img src="./images/facebook-contact form.png" /> </a>
             </li>
 
             <li>
-              <a href=""> <img src="./img/twitter - contact form.png" /> </a>
+              <a href=""> <img src="./images/twitter - contact form.png" /> </a>
             </li>
 
             <li>
-              <a href=""> <img src="./img/instagram - contact form.png" /> </a>
+              <a href="">
+                <img src="./images/instagram - contact form.png" />
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-
-
   </body>
 </html>

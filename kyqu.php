@@ -1,14 +1,11 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
-  header("location:index.php");
+
+if(isset($_SESSION['emrimbiemri'])){
+    header("location:index.php");
 }else{
-  
-
-
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -33,7 +30,6 @@ if(isset($_SESSION['username'])){
           <li><a href="./stafi.php">Stafi Mjekësor</a></li>
           <li><a href="./kontakti.php">Kontakti</a></li>
           <li><a href="./terminet.php">Terminet</a></li>
-          <li id="kyqu"><a href="./kyqu.php">Kyqu</a></li>
         </ul>
       </nav>
 
@@ -43,21 +39,25 @@ if(isset($_SESSION['username'])){
 
         <div class="left-container">
 
-        <form action="kyquValidation.php" method="post" action >
-                
-                <div class="font">Emri i Perdoruesit </div>
-                <input  type="text" name="username" >
+        <form action="kyquValidation.php" onsubmit="return validateFormKyqu()" name="Form"  method="post">     
+                <div class="font">Emri i Përdoruesit </div>
+                <input  type="text" name="emrimbiemri" >
                
     
                 <div class="font2">Fjalkalimi</div>
-                <input type="password" name="password">
+                <input type="password" name="fjalkalimi">
                
-                <input type="submit" value ="login" name= "loginBtn">
+                <input type="submit" value ="login" name= "login">
              
     
-               <a  id="paragraph"  href="./insert.php">Nuk keni llogari? </a>
+               <a  id="paragraph"  href="./regjistrohu.php">Nuk keni llogari? </a>
         
             </form>
+
+            <?php
+           require_once('kyquValidation.php');
+
+              ?>
         </div>
     
         
@@ -65,7 +65,7 @@ if(isset($_SESSION['username'])){
 
 
 
-    <script src="./js/kyqu.js"></script>
+    <script src="kyqu.js"></script>
   </body>
 </html>
 

@@ -2,7 +2,7 @@
 require_once ('Database.php');
 
 
-class sherbimetController{
+class sherbimi{
     private $Id;
     private $image;
     private $title;
@@ -70,6 +70,7 @@ class sherbimetController{
     }
 
     public function edit($id){
+      
         $query = $this->db->pdo->prepare('SELECT * from sherbimetmjeksore WHERE id = :id');
         $query->bindParam(':id', $id);
         $query->execute();

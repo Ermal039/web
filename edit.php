@@ -20,7 +20,7 @@ $record=$dhenat->lexoDhenatSipasIDs($myId);
     echo 
     "<script>
         alert('Te dhenat jane edituar me sukses');
-        document.location='regjistrimi.php'
+        document.location='insert.php'
     </script>";
      }
  }

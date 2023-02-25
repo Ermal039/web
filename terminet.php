@@ -14,8 +14,6 @@ if(isset($_POST['submit'])){
 
     $ter ->insertoDhenat();
 }
-
-
 ?>
 
 
@@ -73,13 +71,13 @@ if(isset($_POST['submit'])){
 
    <div class="form-control">
     <label><b>Emaili:</b></label>
-    <input type="email"   name= "emaili" required>
+    <input type="email"   name= "emaili" >
     
    </div>
 
    <div class="form-control">
     <label><b>Fjalekalimi:</b></label>
-    <input type="password"   name="fjalekalimi" required>
+    <input type="password"   name="fjalekalimi" >
   
    </div>
 

@@ -51,4 +51,8 @@ function validateFormTerminet() {
   
     return true;
   }
-  
+  function validateEmail(email) {
+    // A simple regex to validate email addresses
+    const emailRegex = /\S+@\S+.\S+/;
+    return emailRegex.test(email);
+  }

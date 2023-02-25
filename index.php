@@ -1,7 +1,7 @@
 <?php
 session_start();
 $hide="";
-if(!isset($_SESSION['username'])){
+if(!isset($_SESSION['emrimbiemri'])){
     header("location:kyqu.php");
 }else{
     if($_SESSION['role'] == "admin"){

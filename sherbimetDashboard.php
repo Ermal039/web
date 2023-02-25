@@ -60,15 +60,17 @@ require_once ('sherbimetController.php');
     <table class="content-table">
         <thead>
             <tr>
-              <th>image</th>
-              <th>title</th>
-              <th>body</th>
+              <th>Foto</th>
+              <th>Titulli</th>
+              <th>Permbajtja</th>
+              <th>Ndryshime</th>
+              <th>Fshirja</th>
             </tr>
         </thead>
 
         <tbody>
 <?php
-$sh = new sherbimetController;
+$sh = new sherbimi();
 $allsherbimetmjeksore = $sh->readData();
 foreach($allsherbimetmjeksore as $sherbimetmjeksore): ?>
     <tr>

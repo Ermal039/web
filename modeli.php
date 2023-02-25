@@ -65,11 +65,7 @@ class regjistrohu extends dbConnect{
         $stm ->bindParam(':email',$this->email);
         $stm ->bindParam(':fjalkalimi',$this->fjalkalimi);
         $stm ->bindParam(':nrtelefonit',$this->nrtelefonit);
-  //Testim i Metodes
- /* $this ->emrimbiemri='AndaPilingjurka';
-  $this ->email='andapilingjurka@gmail.com';
-  $this ->fjalkalimi= '12345';
-  $this ->nrtelefonit='044123321';*/
+       
         $stm ->execute();
 
          echo "<script>
@@ -111,7 +107,7 @@ public function lexoDhenatSipasIDs($id){
         if($stm == true){
             echo "<script>
             alert('Te dhenat jane fshire me sukses');
-            document.location='regjistrimi.php';
+            document.location='insert.php';
             </script>";
         }else{
             return false;
